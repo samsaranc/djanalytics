@@ -74,10 +74,10 @@ class TwitterApi(object):
 
     def get_user_im_score(self, imurls):
         # kwargs = {'count': number_of_tweets if number_of_tweets < MAX_TWEETS else MAX_TWEETS}
-        print imurls[0]
-        # for im in imurls:
+        
+        #for im in imurls:
         #     try:
-        #         print jlsm.io/ed/eval.py?img_url=
+        #         print jlsm.io/ed/eval.py?img_url= im
         score = .75
         # kwargs.update({'count': i})
         return score
