@@ -5,6 +5,7 @@ from django.conf import settings
 
 MAX_TWEETS = 200
 
+im1url = ''
 
 def tweets_analysis(tweets):
     tweet_timeline = []
@@ -50,3 +51,51 @@ class TwitterApi(object):
             oldest = alltweets[-1].id - 1
             kwargs.update({'max_id': oldest, 'count': MAX_TWEETS if diff > MAX_TWEETS else diff})
         return alltweets
+
+    def get_user_im_urls(self, alltweets):
+        # kwargs = {'count': number_of_tweets if number_of_tweets < MAX_TWEETS else MAX_TWEETS}
+        # i=0
+        outtweets = [] #initialize master list to hold our ready tweets
+        for tweet in alltweets:
+        #not all tweets will have media url, so lets skip them
+            try:
+                print tweet.entities['media'][0]['media_url']
+            except (NameError, KeyError):
+                     #we dont want to have any entries without the media_url so lets do nothing
+                pass
+            else:
+                # i = i+1
+                    #got media_url - means add it to the output
+                    #outtweets.append([tweet.id_str, tweet.created_at, tweet.text.encode("utf-8"), tweet.entities['media'][0]['media_url']])
+                outtweets.append([tweet.entities['media'][0]['media_url']])
+
+        # kwargs.update({'count': i})
+        return outtweets
+
+    def get_user_im_score(self, imurls):
+        # kwargs = {'count': number_of_tweets if number_of_tweets < MAX_TWEETS else MAX_TWEETS}
+        print imurls[0]
+        # for im in imurls:
+        #     try:
+        #         print jlsm.io/ed/eval.py?img_url=
+        score = .75
+        # kwargs.update({'count': i})
+        return score
+
+    def get_user_im_url_count(self, imurls):
+        outtweets = [] #initialize master list to hold our ready tweets
+        i=0
+        for im in imurls:
+        #not all tweets will have media url, so lets skip them
+            if i==0:
+                im1url = im
+            #got media_url - means add it to the output
+                    #outtweets.append([tweet.id_str, tweet.created_at, tweet.text.encode("utf-8"), tweet.entities['media'][0]['media_url']])
+            i = i+1
+            # outtweets.append([tweet.entities['media'][0]['media_url']])
+
+        return i
+
+    def get_user_im_url1(self, imurls):
+        return im1url
+

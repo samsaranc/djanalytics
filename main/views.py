@@ -19,6 +19,11 @@ class TwitterAnalyticsDashboard(TemplateView):
                 context['tweets'] = tt.get_user_tweets(context['username'], number_of_tweets=200)
                 context['profile'] = tt.get_user_profile(context['username'])
                 context['analysis'] = tweets_analysis(context['tweets'])
+                context['imurls'] = tt.get_user_im_urls(context['tweets'])
+                context['imurlct'] = tt.get_user_im_url_count(context['imurls'])
+                # context['im1url'] = tt.get_user_im_url1(context['imurls'])
+                context['imscore'] = tt.get_user_im_score(context['imurls'])
+            
             except Exception as e:
                 from django.http import Http404
                 raise Http404(e.response.reason)
