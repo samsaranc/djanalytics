@@ -1,35 +1,123 @@
-<html lang="en">
-    <head>
-        <!--<h1>Social Media Analysis tool: how pro-eating disorder is your Twitter account? </h1>
-        -->
-        <img src="docs/images/EDlogo.png"></img>
-            </head>
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>EDanalysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
 
-    <body>
-    <div class="container">
-        <!-- #END# Overlay For Sidebars -->
-        <!-- Search Bar -->
-        <div class="row clearfix card">
-            <div class="col s12 l6 m12">
-                <blockquote>
-                    This is demo of analysis on an iput user's tweets. It'll get your latest 200 tweets and will
-                    show timeline and hastag graph behalf of tweets
-                </blockquote>
-                <form method="GET" action="" id="TwitterForm">
-                    <div class="input-field col l7 ">
-                        <input required name="username" id="id_username" type="text"
-                           value="" class="validate"
-                           autocomplete="off">
-                        <label for="id_username" class=""> Username
-                            *</label>
-                    </div>
-                    <div class="input-field col l5">
-                        <input type="submit" id="Twitter-form" class=" btn btn-primary btn-block"
-                              value="Submit">
-                    </div>
-                </form>
-            </div>
-           </div>
-        </div>
-    </body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="EDanalysis" class="alt">
+						<center>
+						<!-- <span class="logo"><img src="images/EDlogo1.png" alt="ED analysis logo"></img></span> -->
+						<br>
+						<h1>ED analysis</h1>
+						<p>using <a href="http://samsaranc.github.io/docs/SEAS_RD18_Abstract_Pless.pdf">deep learning to analyze social media content for pro-ED images.</a><br>
+							classifier + work featured here built by <a href="http://samsaranc.github.io/">Samsara Counts</a>, <a href="http://jlsm.io/">Justine Manning</a>, <a href="https://www.linkedin.com/in/lulwah-alkulaib-27341919/">Lulwah Alkulaib</a>, <br>
+							and <a href="http://samsaranc.github.io/docs/SEAS_RD18_Abstract_Pless.pdf">others*</a> advised by <a href ="http://robertpless.com/">Dr. Robert Pless</a></p>
+						</center>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#first">pro-ED Hashtag Neighborhood</a></li>
+						<!-- 	<li><a href="#second">Second Section</a></li>
+							<li><a href="#cta">Get Started</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Twitter User Analysis</h2>
+										</header>
+										<ul class="actions">
+											<li><a href="generic.html" class="button">Submit</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="images/EDlogo1.png" alt="Edanalysis logo" /></span>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>pro-ED Hashtag Neighborhood</h2>
+								</header>
+								<ul class="features">
+										<!-- <span class="icon major style1 fa-code"></span> -->
+										<figure><img src="images/anaGraph2.png" size="width:1000px"></img></figure>
+					
+			
+								</ul>
+								<!-- <footer class="major">
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer> -->
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2><a href="http://samsaranc.github.io/docs/SEAS_RD18_Abstract_Pless.pdf">original abstract</a></h2>
+							<p>research done by <a href="http://samsaranc.github.io/">Samsara Counts</a>, <a href="http://jlsm.io/">Justine Manning</a>, <a href="https://www.linkedin.com/in/lulwah-alkulaib-27341919/">Lulwah Alkulaib,</a> <a href ="http://robertpless.com/">Dr. Robert Pless</a>,
+							and <a href="http://samsaranc.github.io/docs/SEAS_RD18_Abstract_Pless.pdf">others*</a></p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+							</ul>
+						</section> 
+						<section>
+							<h2>contact</h2>
+							<dl class="alt">
+								<dt><a href="https://www.gwu.edu/">GW</a></dt>
+								<dd><a href="http://cs.seas.gwu.edu/">Dept. of Computer Science</a>,<br> <a href="https://www.seas.gwu.edu">School of Engineering and Applied Science</a></dd>
+								<dt>Email</dt>
+								<dd><a href="#">countss {at} gwu {dot} edu</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://twitter.com/samsaranc" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<!-- <li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon fa-dribbble alt"><span class="label">Dribbble</span></a></li> -->
+							</ul>
+						</section>
+						<p class="copyright">&copy; 2018. frontend design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
